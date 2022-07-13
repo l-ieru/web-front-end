@@ -1,0 +1,169 @@
+body{
+    background-color: aliceblue;
+    color: #555555;/*没有指定颜色就会用body的颜色*/
+
+    /*字体
+    san-serif-->无衬线
+    serif-->有衬线
+    monospace-->等宽字体
+    字体名超过两个词用双引号括起来 eg."Gill Sans"
+    优先使用第一个字体
+    */
+    font-family: Arial, sans-serif;
+    font-size: 16px;/*字体大小*/
+    font-weight: bold;/*字重（粗细）*/
+    /*也可以直接
+    font: bold 16px Arial, sans-serif;
+     */
+    line-height: 1.5em;/*行高*/
+}
+
+button{
+    background-color: red;
+    color: darkgrey;
+    padding: 10px 15px;
+
+}
+
+/*鼠标移动到时*/
+button:hover{
+    background-color: aqua;
+}
+/*按下*/
+button:active{
+    background-color: #fff;
+}
+
+a{
+    text-decoration: none;
+    color: royalblue;
+}
+
+a:hover{
+    color:  cyan;
+}
+
+/*访问过*/
+a:visited{
+    color: red;
+}
+
+/*清除float*/
+.clearfix{
+    clear: both;
+}
+
+.box1{
+    background-color: coral;
+    color : cornsilk;
+
+    border: 5px blueviolet solid;
+    border-right: 5px red solid;
+    border-left :4px green solid;
+    border-top : 8px darkseagreen dotted;/*点线*/
+    border-bottom: 6px aqua double;/*双线*/
+    /*border-bottom-width: ;
+    border-bottom-style: ;
+    可以单独改
+     */
+
+    padding: 10px;
+
+    margin: 5px 10px 5px 10px;/*上右下左顺时针*/
+    margin: 5px 10px;/*上下 左右*/
+    margin: 5px 10px 5px;/*上 左右 下*/
+
+    margin-top: 20px;//下移
+}
+
+/*只修改box1的<h1>*/
+.box1 h1{
+    font-family: "Times New Roman";
+    font-weight: lighter;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;/*大小写*/
+    letter-spacing: normal;/*字母间距*/
+    word-spacing: normal;/*单词间距*/
+}
+
+.box2{
+    border-radius: 15px;/*圆角*/
+    border: 5px dotted #cccccc;
+    padding: 20px;
+    margin: 20px 0px;
+}
+
+.box2 h1{
+    text-align: center;/*居中*/
+}
+
+
+.container {
+    /*总宽度的80%*/
+    width: 80%;
+    /*水平居中*/
+    margin: auto;
+}
+
+.list li{
+    list-style-image: url("../img/11.png");/*自选图片*/
+    list-style: square;/*自带样式*/
+}
+
+.block{
+    float: left;
+    width: 33.3%;
+    border: 1px solid silver;
+    box-sizing: border-box;
+}
+
+#main-block{
+    float: left;
+    width: 70%;
+    border: 1px solid silver;
+    box-sizing: border-box;
+}
+
+#sidebar{
+    float: right;
+    width: 30%;
+    border: 1px solid silver;
+    box-sizing: border-box;
+}
+
+.list2 li:nth-child(even){
+    background-color: darkgrey;
+}
+
+.list2 li:first-child{
+    background-color: darkseagreen;
+}
+
+.list2 li:nth-child(3){
+    color: darkturquoise;
+}
+
+.position-box{
+    width: 500px;
+    height: 500px;
+    border: 1px solid darkkhaki;
+    position: relative;
+}
+
+.position-box h1{
+    position: absolute;
+    top: 50px;
+}
+
+.position-box h2{
+    position: absolute;
+    left: 30px;
+}
+
+#fixed{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+}
+
